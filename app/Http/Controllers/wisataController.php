@@ -23,7 +23,7 @@ class wisataController extends Controller
         $data->maps = $request->maps;
         $data->save();
 
-        return response()->json($data);
+        return response()->json('sukses');
     }
 
     public function update(Request $request , $id)
@@ -36,14 +36,15 @@ class wisataController extends Controller
         $data->maps = $request->maps;
         $data->save();
 
-        return response()->json($data);
+        return response()->json('sukses');
     }
 
     public function delete($id)
     {
+        
         $data = Pariwisata::find($id);
-        $data->save();
+        $data->delete();
 
-        return response()->json($data);
+        return response()->json('sukses');
     }
 }

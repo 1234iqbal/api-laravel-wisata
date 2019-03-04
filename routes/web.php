@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/wisata', 'wisataController@index');
-Route::POST('/wisata/create', 'wisataController@store');
-Route::patch('/wisata/{id}', 'wisataController@update');
-Route::delete('/wisata/{id}', 'wisataController@delete');
+// Route::get('/wisata', 'wisataController@index');
+// Route::POST('/wisata/create', 'wisataController@store');
+// Route::patch('/wisata/{id}', 'wisataController@update');
+// Route::delete('/wisata/{id}', 'wisataController@destroy');
