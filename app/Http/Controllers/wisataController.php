@@ -8,7 +8,10 @@ class wisataController extends Controller
 {
     public function index()
     {
-        $data = Pariwisata::all();
+        $data['data']   = Pariwisata::all();
+        $data['pesan']  = "Semua Data Berita";
+        $data['sukses'] = 1;
+
         return response()->json($data);
     }
 
