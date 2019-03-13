@@ -37,7 +37,7 @@ class wisataController extends Controller
         $data->detail_pariwisata = $request->detail_pariwisata;
         $data->gambar_pariwisata = $request->gambar_pariwisata;
         $data->maps = $request->maps;
-        $data->save();
+        $data->update();
 
         return response()->json('sukses');
     }
